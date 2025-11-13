@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Video Mask",
+  "version": "1.0.0",
+  "description": "YouTubeの動画部分をマスクして音声だけ聞けるようにします。",
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
